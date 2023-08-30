@@ -1,7 +1,7 @@
 [
     {
         "project_name": "HandyMate",
-        "image_url": "https://github.com/WWhitedogi/React_Portfolio_YG/blob/master/src/assets/pro_django.png",
+        "image_url": "https://raw.githubusercontent.com/WWhitedogi/React_Portfolio_YG/master/src/assets/pro_django.png",
         "description": "A Full-Stack web application, where users can reserve home services like Electrician, Plumber, Gardening etc. User can also delete the reservation. The Admin can add new services and delete existing services.",
         "source_link": "#",
         "live_link": "https://deploy--fabulous-horse-dfd6cb.netlify.app/",
