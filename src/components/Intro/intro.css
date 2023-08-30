@@ -1,0 +1,143 @@
+#intro{
+    height: calc(100vh -4rem );
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+
+
+}
+
+.bg{
+    position: absolute;
+    top:-4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hello{
+    font-size: 3rem;
+    font-weight: 100;
+}
+/* text glow */
+.introName {
+    text-shadow: 0 0 10px #FFFF00;
+}
+/* 定义动画效果 */
+@keyframes yellowGlow {
+    from {
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
+    }
+
+    to {
+        text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFD700;
+    }
+}
+
+/* 为文字应用动画 */
+.introName {
+    color: yellow;
+    animation: yellowGlow 1s ease-in-out infinite alternate;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    text-shadow: 0.5rem;
+}
+
+.btn{
+    background:white;
+    margin: 1rem 0 ;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+
+}
+/* Shared button styles */
+.introButtons button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    /* Spacing between the buttons */
+    cursor: pointer;
+    border: none;
+    /* Removing default borders */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Smooth transition for hover effects */
+    display: inline-block;
+    /* Making the button behave like inline elements */
+    text-align: center;
+    /* Ensuring text inside is centered */
+}
+
+/* "Get My Resume" button style - Yellow background, Black text */
+.introBtn1 {
+    background-color: #FFD700;
+    /* Golden yellow */
+    color: #000;
+    /* Black text */
+}
+
+/* "Let's Talk" button style - Black background, White text */
+.introBtn2 {
+    background-color: #FFD700;
+    /* Black background */
+    color: #000;
+    /* White text */
+}
+.introBtn3 {
+    background-color: #FFD700;
+    /* Black background */
+    color: #000;
+    /* White text */
+}
+/* Hover effects */
+.introButtons button:hover {
+    transform: translateY(-3px);
+    /* Slight upward movement */
+}
+
+.introBtn1:hover {
+    background-color: #333;
+    /* A darker shade of yellow for hover */
+}
+
+.introBtn2:hover {
+    background-color: #333;
+    /* A lighter shade of black for hover */
+}
+.introBtn3:hover {
+    background-color: #333;
+    /* A lighter shade of black for hover */
+}
+
+/*  在屏幕宽度不超过840像素时，这段代码将会使具有类名 bg 的元素向左移动，移动距离为视口宽度的10....%*/
+@media screen and (max-width:840px){
+    .bg{
+        right: -20vw;
+    }
+   
+}
