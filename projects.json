@@ -1,7 +1,7 @@
 [
     {
         "project_name": "HandyMate",
-        "image_url": "https://prantoshb.github.io/Portfolio-Backend/assets/handymate.png",
+        "image_url": "https://prantoshb.github.io/Portfolio-Backend/assets/pro_django.png",
         "description": "A Full-Stack web application, where users can reserve home services like Electrician, Plumber, Gardening etc. User can also delete the reservation. The Admin can add new services and delete existing services.",
         "source_link": "https://github.com/PrantoshB/HandyMate-Frontend",
         "live_link": "https://deploy--fabulous-horse-dfd6cb.netlify.app/",
